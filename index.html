@@ -1,0 +1,214 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Materialize</title>
+    <link rel="stylesheet" href="materialize.min.css" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+    
+    .catImg{
+        
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .content {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h5{
+  color: #fff;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+
+.fadeIn-top{
+  top: 20%;
+}
+
+    .authImg {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
+</head>
+<body>
+    
+              
+  <div class="row blogCat">
+      
+      <h2>Blog categories</h2>
+   <div class="col s12 m3"> 
+  <div class="content">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image catImg" src="mgales.jpg">
+      <div class="content-details fadeIn-top">
+        <h5>مجالس مويك</h5>
+        <p>هنا تكتب وصف البرناامج وتفاصيلة</p>
+      </div>
+    </a>
+  </div>
+      </div>
+      
+             <div class="col s12 m3"> 
+  <div class="content">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image catImg" src="mgales.jpg">
+      <div class="content-details fadeIn-top">
+        <h5>مجالس مويك</h5>
+        <p>هنا تكتب وصف البرناامج وتفاصيلة</p>
+      </div>
+    </a>
+  </div>
+      </div>
+       <div class="col s12 m3"> 
+  <div class="content">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image catImg" src="nwaya.jpg">
+      <div class="content-details fadeIn-top">
+        <h5>نوايا حسنة</h5>
+        <p>هنا تكتب وصف البرناامج وتفاصيلة</p>
+      </div>
+    </a>
+  </div>
+      </div>
+       <div class="col s12 m3"> 
+  <div class="content">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image catImg" src="ashbal.jpg">
+      <div class="content-details fadeIn-top">
+        <h5>أشبال مويك</h5>
+        <p>هنا تكتب وصف البرناامج وتفاصيلة</p>
+      </div>
+    </a>
+  </div>
+      </div>
+
+      
+      
+      
+      
+
+    </div>
+    
+    
+<div class="row topAuth">
+          <h2>Top Author</h2>
+   
+
+    
+    <div class="card horizontal col s6">
+         
+    <div class="col s4">
+        <img class="authImg" src="user.jpg">
+
+    
+    </div>
+
+        <div class="col s8">
+          <div class="card-stacked">
+          <h4>Author name</h4>
+          <p>I am a very simple card. I am good at containing small bits of information.</p>
+          <span><i class="material-icons ">edit</i>30 articals</span>
+              
+        <a href="#"><i class=" floating right material-icons color-blue">facebook</i></a>
+          <a><i class="  floating right material-icons color-cyan">twitter</i></a>
+
+      </div>
+
+    </div>
+    </div>
+
+    </div>
+
+    
+                      <h2>Pagination</h2>
+
+
+    <div class="pagnationSec floating center">
+
+      <ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active green"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
+
+    </div>
+
+
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="materialize.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+    </script>
+</body>
+</html>
